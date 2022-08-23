@@ -1,4 +1,6 @@
 import {Article} from "../Article";
+import './ArticleCard.css';
+
 
 export type ArticleCardProps = {
    article : Article
@@ -7,13 +9,22 @@ export type ArticleCardProps = {
 export default function ArticleCard(props : ArticleCardProps){
 
     return (
-        <div>
-            <p>
+        <div className={"article-card"}>
+
+         <div className={"article-image"}>
+             <img alt={"my-shop"}/>
+         </div>
+           <h3 className={"article-title"}>
+               <p>
                 {props.article.title}
-            </p>
-            <p>
+                </p>
+           </h3>
+
+           <h6>
+               <p>
                 {props.article.id}
-            </p>
+                </p>
+           </h6>
         </div>
     )
 

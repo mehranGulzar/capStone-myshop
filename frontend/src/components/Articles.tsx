@@ -2,7 +2,8 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import {Article} from "../Article";
 import ArticleCard from "./ArticleCard";
-
+import './ArticleCard.css';
+import './Articles.css';
 
 export default function Articles(){
 
@@ -16,7 +17,7 @@ export default function Articles(){
 
 
         return(
-            <div>{articles.map( (article) => <ArticleCard key={article.id} article={article}/>)}</div>
+            <div className={"articles-box-all"}>{articles.map( (article) => <ArticleCard key={article.id} article={article}/>)}</div>
         )
 
 

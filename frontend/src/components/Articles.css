@@ -1,0 +1,9 @@
+.articles-box-all{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-basis: 20%;
+
+
+}
+

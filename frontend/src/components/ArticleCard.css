@@ -1,0 +1,48 @@
+.article-card{
+
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    box-shadow: 2px 4px lightblue ;
+
+}
+.article-card:hover{
+    background-color: deepskyblue;
+    border: 1px solid black;
+}
+
+.article-card:hover .article-title{
+    color: black;
+}
+
+.article-title{
+    color: red;
+}
+
+.article-image{
+    border: 1px solid black;
+    height: 150px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

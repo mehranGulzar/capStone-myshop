@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios'
 import Articles from "./components/Articles";
+
 
 
 function App() {
@@ -9,12 +9,22 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div  className={"app-body"}>
+        <header className={"header"}>
+
+        </header>
+      <div>
+        <ul className="navigation">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div className={"app-articles"}>
 
     <Articles/>
 
-      </header>
+      </div>
     </div>
   );
 }

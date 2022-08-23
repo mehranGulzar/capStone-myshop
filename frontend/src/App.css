@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+
+
+.app-body{
+    background-color: azure;
+
+    margin: auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background: deepskyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navigation a:hover {
+    background: #1565C0;
 }
 
-.App-link {
-  color: #61dafb;
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
 }
+.header{
+    background-image: url("./pics/everyday.png");
+    padding: 30px;
+    border: 1px solid black;
+    height: 80px;
+    background-repeat: no-repeat;
+    width: 300px;
+}
+
+
+
+
+
+
