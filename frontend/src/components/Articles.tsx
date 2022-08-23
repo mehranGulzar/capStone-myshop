@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
 import {Article} from "../Article";
+import ArticleCard from "./ArticleCard";
 
 
 export default function Articles(){
@@ -15,7 +16,7 @@ export default function Articles(){
 
 
         return(
-            <div>{articles.map( (article) => article.title)}</div>
+            <div>{articles.map( (article) => <ArticleCard key={article.id} article={article}/>)}</div>
         )
 
 
