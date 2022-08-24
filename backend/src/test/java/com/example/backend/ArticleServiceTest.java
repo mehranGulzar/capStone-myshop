@@ -51,7 +51,7 @@ ArticleService articleService = new ArticleService(articleRepo);
     }
 
 
-  /*  @Test
+   @Test
     void deleteArticleTest(){
         Article article= new Article(
                 "1",
@@ -61,13 +61,13 @@ ArticleService articleService = new ArticleService(articleRepo);
 
         );
         String id = article.id();
-        when(articleRepo.deleteById()).thenReturn(article.id);
-        String actual = articleService.deleteArticle(article.id());
-        Assertions.assertEquals(List.of(article), actual);
+        when(articleService.deleteArticle(id)).thenReturn(true);
+        boolean actual = articleService.deleteArticle(article.id());
+        Assertions.assertEquals(true, actual);
     }
 
 
-   */
+
 
 
 
