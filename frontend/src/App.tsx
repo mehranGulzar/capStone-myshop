@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Articles from "./components/Articles";
+import Footer from "./components/Footer";
 
 
 
@@ -25,6 +26,8 @@ function App() {
     <Articles/>
 
       </div>
+
+        <Footer />
     </div>
   );
 }

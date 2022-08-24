@@ -22,4 +22,23 @@ public class ArticleService {
     public List<Article> getAllArticles(){
         return articleRepo.findAll();
     }
+
+
+    public Article saveArticle(Article article){
+       return articleRepo.save(article);
+    }
+
+    public Boolean deleteArticle(String id) {
+            boolean bool ;
+        if (articleRepo.existsById(id)) {
+            articleRepo.deleteById(id);
+            bool = true;
+        }else {
+            bool= false;
+        }
+        return bool;
+    }
+
+
+
 }
