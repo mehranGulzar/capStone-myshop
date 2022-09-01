@@ -25,7 +25,7 @@ ArticleService articleService = new ArticleService(articleRepo);
                                                         "1",
                                                         "Shoe2",
                                                         342.4,
-                                                        "Made in Germany"
+                                                        "Made in Germany",""
 
                                                 );
                                                 when(articleRepo.findAll()).thenReturn(List.of(article));
@@ -40,7 +40,7 @@ ArticleService articleService = new ArticleService(articleRepo);
                 "1",
                 "Shoe2",
                 342.4,
-                "Made in Germany"
+                "Made in Germany",""
 
         );
         when(articleRepo.save(article)).thenReturn(article);
@@ -57,7 +57,7 @@ ArticleService articleService = new ArticleService(articleRepo);
                 "1",
                 "Shoe2",
                 342.4,
-                "Made in Germany"
+                "Made in Germany",""
 
         );
         String id = article.id();

@@ -7,8 +7,9 @@ public record Article(
         String id,
         String title,
         double price,
-        String description
+        String description,
+        String imageUrl
+
+
 ){
-
-
 }

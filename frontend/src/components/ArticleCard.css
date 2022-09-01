@@ -7,18 +7,21 @@
     box-shadow: 4px 6px 4px 6px lightblue ;
 
 }
-.article-card:hover{
-    background-color: lightcyan;
 
 
+#price{
+    color: red ;
+    font-size: 2em;
+    text-align: center;
+}
+#title{
+    padding: 10px;
 }
 
-.article-card:hover .article-title{
-    color: #f1f1f1;
-}
 
 .article-title{
-    color: red;
+
+    color: #f1f1f1;
 }
 
 .article-image{
