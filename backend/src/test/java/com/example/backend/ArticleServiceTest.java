@@ -13,26 +13,22 @@ import static org.mockito.Mockito.when;
 
 
  class ArticleServiceTest {
-
-
 ArticleRepo articleRepo = mock(ArticleRepo.class);
-
 ArticleService articleService = new ArticleService(articleRepo);
 
     @Test
     void getAllArticleTest(){
-                                                Article article= new Article(
-                                                        "1",
-                                                        "Shoe2",
-                                                        342.4,
-                                                        "Made in Germany",""
-
-                                                );
-                                                when(articleRepo.findAll()).thenReturn(List.of(article));
-                                                List <Article> actual = articleService.getAllArticles();
-                                                Assertions.assertEquals(List.of(article), actual);
+            Article article= new Article(
+                    "1",
+                    "Shoe2",
+                    342.4,
+                    "Made in Germany",
+                    ""
+                          );
+            when(articleRepo.findAll()).thenReturn(List.of(article));
+            List <Article> actual = articleService.getAllArticles();
+            Assertions.assertEquals(List.of(article), actual);
     }
-
 
     @Test
     void saveArticleTest(){
@@ -44,12 +40,9 @@ ArticleService articleService = new ArticleService(articleRepo);
 
         );
         when(articleRepo.save(article)).thenReturn(article);
-       Article actual = articleService.saveArticle(article);
-
+        Article actual = articleService.saveArticle(article);
         Assertions.assertEquals(article, actual);
-
     }
-
 
    @Test
     void deleteArticleTest(){
@@ -65,11 +58,5 @@ ArticleService articleService = new ArticleService(articleRepo);
         boolean actual = articleService.deleteArticle(article.id());
         Assertions.assertEquals(true, actual);
     }
-
-
-
-
-
-
 
 }

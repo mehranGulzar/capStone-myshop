@@ -19,10 +19,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 
  class ArticleIntegrationTest {
-
     @Autowired
     MockMvc mockMvc;
-
     @Autowired
     ObjectMapper objectMapper;
 
@@ -32,7 +30,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
                 get("/api/article")
         ).andExpect(status().is(200));
     }
-
 
     @Test
     @DirtiesContext
@@ -62,9 +59,5 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 []
 """));
     }
-
-
-
-
 
 }

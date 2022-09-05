@@ -1,10 +1,5 @@
-
-
 .app-body{
     background-color: azure;
-
-
-
 }
 
 .navigation {
@@ -20,7 +15,6 @@
     display: block;
     padding: 1em;
     color: white;
-
 }
 
 .navigation a:hover {
@@ -49,23 +43,11 @@
     }
 }
 .header{
-
-
     border: 1px solid blue;
-
     background-repeat: no-repeat;
-
-
 }
 
 #header-image{
     height: 200px;
     width: 900px;
-
 }
-
-
-
-
-
-

@@ -10,14 +10,12 @@ export default function Details( ){
 
     return(
         <div>
-
             <h1>welcome to Details</h1>
-
             <div className={"article-details"}>
-             <p> {id}</p>
-
+                <p>
+                    {id}
+                </p>
             </div>
-
         </div>
     )
 }

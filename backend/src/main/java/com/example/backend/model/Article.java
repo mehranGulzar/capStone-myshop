@@ -11,5 +11,7 @@ public record Article(
         String imageUrl
 
 
-){
+)
+{
+
 }

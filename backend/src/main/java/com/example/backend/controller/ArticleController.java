@@ -30,9 +30,16 @@ public class ArticleController {
         return articleService.saveArticle(article);
     }
 
+    @GetMapping(path = "/articlewithid")
+    Article getArticleById(String id){
+        return articleService.getArticleById(id);
+    }
 
-
-
+    @GetMapping("/{id}")
+    public ResponseEntity<Article> getPlantById(@PathVariable String id) {
+        Article article = articleService.getArticleById(id);
+        return new ResponseEntity<>(article, HttpStatus.OK);
+    }
 
     @DeleteMapping(value = "{id}")
     public ResponseEntity<String> deletePost(@PathVariable String id) {
