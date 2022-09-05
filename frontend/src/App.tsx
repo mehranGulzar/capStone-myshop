@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
-import {BrowserRouter, Link, Route,  Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Link, Route, Routes} from "react-router-dom";
 import Registration from "./Registration";
 import Contact from "./components/Contact";
 import everyday from "./pics/everyday.png";
@@ -15,7 +15,7 @@ function App() {
 
 
     return (
-        <BrowserRouter>
+        <HashRouter>
 
 
             <div className={"app-body"}>
@@ -47,7 +47,7 @@ function App() {
 
                 <Footer/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
