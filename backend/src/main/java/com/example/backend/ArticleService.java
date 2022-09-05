@@ -33,8 +33,6 @@ public class ArticleService {
         }
         return bool;
     }
-    public Article getArticleById(String id){
-         return articleRepo.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-    }
+
 
 }
