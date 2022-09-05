@@ -7,6 +7,7 @@ import Registration from "./Registration";
 import Contact from "./components/Contact";
 import everyday from "./pics/everyday.png";
 import Details from "./components/Details";
+import AddArticle from "./components/AddArticle";
 
 
 
@@ -27,6 +28,7 @@ function App() {
                             <li><Link to={""}>Home</Link></li>
                             <li><Link to={"/registration"}>Registration</Link></li>
                             <li><Link to={"/contact"}>Contact</Link></li>
+                            <li><Link to={"/admin"}>Admin</Link></li>
 
                         </ul>
                     </div>
@@ -40,6 +42,7 @@ function App() {
                         <Route path={"/contact"} element={<Contact/>}/>
                         <Route path={"/"} element={<Articles/>}/>
                         <Route path={"/details/:id"} element={<Details />}/>
+                        <Route path={"/admin"} element={<AddArticle />}/>
                     </Routes>
 
                 </div>
