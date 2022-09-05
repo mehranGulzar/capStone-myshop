@@ -30,10 +30,6 @@ public class ArticleController {
         return articleService.saveArticle(article);
     }
 
-
-
-
-
     @DeleteMapping(value = "{id}")
     public ResponseEntity<String> deletePost(@PathVariable String id) {
 
