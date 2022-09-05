@@ -2,14 +2,16 @@ import React from 'react';
 import './App.css';
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
-import {BrowserRouter, Link, Route, Router, Routes, useNavigate} from "react-router-dom";
+import {BrowserRouter, Link, Route,  Routes} from "react-router-dom";
 import Registration from "./Registration";
 import Contact from "./components/Contact";
 import everyday from "./pics/everyday.png";
 import Details from "./components/Details";
 
 
+
 function App() {
+
 
 
     return (
@@ -37,7 +39,7 @@ function App() {
                         <Route path={"/registration"} element={<Registration/>}/>
                         <Route path={"/contact"} element={<Contact/>}/>
                         <Route path={"/"} element={<Articles/>}/>
-                        <Route path={"/details"} element={<Details/>}/>
+                        <Route path={"/details/:id"} element={<Details />}/>
                     </Routes>
 
                 </div>

@@ -12,7 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 
-public class ArticleServiceTest {
+ class ArticleServiceTest {
 
 
 ArticleRepo articleRepo = mock(ArticleRepo.class);
