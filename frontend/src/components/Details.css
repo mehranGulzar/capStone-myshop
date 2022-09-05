@@ -1,0 +1,9 @@
+.article-details{
+
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: lightcyan;
+}
