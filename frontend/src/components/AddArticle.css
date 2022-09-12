@@ -1,12 +1,13 @@
 .add-article-form{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 25%;
     height: 500px;
     border-radius: 40px;
     background-color: lightcyan;
-    padding: 30px;
-
+    padding: 20px;
+    height: 100%;
+    margin: 20px;
 }
 
 .button {
@@ -20,15 +21,19 @@
     display: flex;
     justify-content: space-evenly;
     background-color: cadetblue;
-    padding: 50px;
+
+    width: 100%;
 }
 
 .delete-article-form{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 200px;
+    width: 25%;
+    height: 50%;
     border-radius: 40px;
     background-color: lightcyan;
-    padding: 30px;
+    padding: 20px;
+    margin: 20px;
+
 }
+

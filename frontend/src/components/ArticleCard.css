@@ -1,35 +1,32 @@
 .article-card{
-
     border-radius: 10px;
     padding: 20px;
     background-color: #f1f1f1;
-    margin: 10px 20px 20px 80px ;
-    box-shadow: 4px 6px 4px 6px lightblue ;
-
+    margin: 10px 20px 20px 10px ;
+    box-shadow: 4px 6px 4px 6px lightblue;
 }
-
 
 #price{
     color: red ;
     font-size: 2em;
     text-align: center;
 }
+
 #title{
     padding: 10px;
 }
+
 .article-image img{
     width: 200px;
     height: 150px;
 }
 
 .article-title{
-
     color: #f1f1f1;
 }
 
 .article-image{
     border: 1px solid black;
     height: 150px;
-
 }
 

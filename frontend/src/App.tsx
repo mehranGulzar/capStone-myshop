@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import {BrowserRouter, HashRouter, Link, Route, Routes} from "react-router-dom";
 import Registration from "./Registration";
 import Contact from "./components/Contact";
+import header from "./pics/header.png";
+import everyday_marke from "./pics/everyday_marke.png";
 import everyday from "./pics/everyday.png";
 import Details from "./components/Details";
 import AddArticle from "./components/AddArticle";
@@ -16,13 +18,16 @@ function App() {
 
 
     return (
-        <HashRouter>
+        <HashRouter >
 
 
             <div className={"app-body"}>
                 <header className={"header"}>
-                    <img id={"header-image"} alt={"EveryDay"} src={everyday}/>
+                    <div className={"header-images"}>
+                        <img className={"everyday"} src={everyday} alt={"marke"}/>
+                        <img className={"header-first-image"} src={everyday_marke} alt={"marke"}/>
 
+                    </div>
                     <div>
                         <ul className="navigation">
                             <li><Link to={""}>Home</Link></li>
@@ -32,7 +37,11 @@ function App() {
 
                         </ul>
                     </div>
+
+
+
                 </header>
+
 
                 <div className={"app-articles"}>
 
@@ -41,7 +50,7 @@ function App() {
                         <Route path={"/registration"} element={<Registration/>}/>
                         <Route path={"/contact"} element={<Contact/>}/>
                         <Route path={"/"} element={<Articles/>}/>
-                        <Route path={"/details/:id"} element={<Details />}/>
+                        <Route path={"/details/:id"} element={<Details/>}/>
                         <Route path={"/admin"} element={<AddArticle />}/>
                     </Routes>
 

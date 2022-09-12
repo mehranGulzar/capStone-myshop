@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -14,9 +16,13 @@ import static org.mockito.Mockito.when;
 
  class ArticleServiceTest {
 ArticleRepo articleRepo = mock(ArticleRepo.class);
-ArticleService articleService = new ArticleService(articleRepo);
+ArticleService articleService;
 
-    @Test
+     public ArticleServiceTest(ArticleService articleService) {
+         this.articleService = articleService;
+     }
+
+     @Test
     void getAllArticleTest(){
             Article article= new Article(
                     "1",
@@ -58,5 +64,7 @@ ArticleService articleService = new ArticleService(articleRepo);
         boolean actual = articleService.deleteArticle(article.id());
         Assertions.assertEquals(true, actual);
     }
+
+
 
 }
