@@ -17,6 +17,7 @@ export default function Details( ) {
             .then((data) => {
                 setArticle(data)
             })
+        //eslint-disable-next-line
     }, [])
 
 

@@ -1,5 +1,5 @@
 import {FormEvent, useState} from "react";
-import {Article, NewArticle} from "../Article";
+import {NewArticle} from "../Article";
 import './AddArticle.css';
 import axios from "axios";
 

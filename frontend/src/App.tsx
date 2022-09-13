@@ -2,11 +2,9 @@ import React from 'react';
 import './App.css';
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
-import {BrowserRouter, HashRouter, Link, Route, Routes} from "react-router-dom";
+import {HashRouter, Link, Route, Routes} from "react-router-dom";
 import Registration from "./Registration";
 import Contact from "./components/Contact";
-import header from "./pics/header.png";
-
 import everyday from "./pics/everyday.png";
 import Details from "./components/Details";
 import AddArticle from "./components/AddArticle";
