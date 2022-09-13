@@ -16,11 +16,9 @@ import static org.mockito.Mockito.when;
 
  class ArticleServiceTest {
 ArticleRepo articleRepo = mock(ArticleRepo.class);
-ArticleService articleService;
+ArticleService articleService = new ArticleService(articleRepo);
 
-     public ArticleServiceTest(ArticleService articleService) {
-         this.articleService = articleService;
-     }
+
 
      @Test
     void getAllArticleTest(){
