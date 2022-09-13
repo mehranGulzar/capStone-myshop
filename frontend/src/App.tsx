@@ -31,8 +31,6 @@ function App() {
                     <div>
                         <ul className="navigation">
                             <li><Link to={""}>Home</Link></li>
-                            <li><Link to={"/registration"}>Registration</Link></li>
-                            <li><Link to={"/contact"}>Contact</Link></li>
                             <li><Link to={"/admin"}>Admin</Link></li>
 
                         </ul>
