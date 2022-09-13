@@ -8,6 +8,8 @@
     justify-content: space-evenly;
     list-style: none;
     background: deepskyblue;
+    width: 100%;
+
 }
 
 .navigation a {
@@ -15,6 +17,22 @@
     display: block;
     padding: 1em;
     color: white;
+}
+.app-body{
+border: 1px solid black;
+}
+
+.header-first-image{
+    width: 30%;
+}
+
+.everyday{
+    width: 30%;
+}
+.header-images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navigation a:hover {
@@ -43,11 +61,19 @@
     }
 }
 .header{
-    border: 1px solid blue;
-    background-repeat: no-repeat;
+    background-color: white;
 }
 
-#header-image{
-    height: 200px;
-    width: 900px;
+.centered{
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-image{
+    width: 100%;
+    height: 400px;
+    opacity: 0.5;
 }

@@ -24,6 +24,12 @@ public class ArticleController {
 
         return articleService.getAllArticles();
     }
+    @GetMapping("/{id}")
+    public ResponseEntity<Article> getPlantById(@PathVariable String id) {
+        Article article = articleService.getArticleById(id);
+        return new ResponseEntity<>(article, HttpStatus.OK);
+    }
+
 
     @PostMapping()
     Article addArticle(@RequestBody Article article) {
@@ -41,5 +47,7 @@ public class ArticleController {
             return new ResponseEntity<>(id, HttpStatus.OK);
         }
     }
+
+
 
 }

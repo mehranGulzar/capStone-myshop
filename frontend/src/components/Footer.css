@@ -1,7 +1,14 @@
 #footer{
+    display: flex;
+    justify-content: space-around;
     background-color: #888888;
     height: 300px;
     color: beige;
+}
 
+
+#footer *:hover{
+    border-bottom: 1px solid blue;
 
 }
+

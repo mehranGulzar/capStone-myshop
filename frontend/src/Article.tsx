@@ -9,3 +9,6 @@ export type Article = {
     imageUrl : string
 
 }
+
+
+export type NewArticle = Omit<Article, "id">

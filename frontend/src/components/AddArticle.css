@@ -1,0 +1,39 @@
+.add-article-form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 500px;
+    border-radius: 40px;
+    background-color: lightcyan;
+    padding: 20px;
+    height: 100%;
+    margin: 20px;
+}
+
+.button {
+    display: flex;
+    background-color: #1565C0;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cadetblue;
+
+    width: 100%;
+}
+
+.delete-article-form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    border-radius: 40px;
+    background-color: lightcyan;
+    padding: 20px;
+    margin: 20px;
+
+}
+
