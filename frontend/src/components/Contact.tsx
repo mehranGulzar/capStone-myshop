@@ -1,14 +1,14 @@
-
+import './Contact.css';
 
 export default function Contact(){
         return (
 
-            <div>
+            <div className={"contact"}>
 
                 <ul>
 
-                    <li>Email : max@mustermann.de</li>
-                    <li>tel: 01234 58473</li>
+                    <li>Email : m.gulzar@web.de</li>
+                    <li>tel: 017643829032</li>
 
                 </ul>
             </div>
