@@ -1,14 +1,6 @@
 #footer{
     display: flex;
-    justify-content: space-around;
-    background-color: #888888;
-    height: 300px;
-    color: beige;
+    flex-direction: column;
+    background-color: darkgray;
+    padding-left : 50px ;
 }
-
-
-#footer *:hover{
-    border-bottom: 1px solid blue;
-
-}
-
