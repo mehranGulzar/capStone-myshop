@@ -30,6 +30,7 @@ function App() {
                         <ul className="navigation">
                             <li><Link to={""}>Home</Link></li>
                             <li><Link to={"/admin"}>Admin</Link></li>
+                            <li><Link to={"/contact"}>Contact</Link></li>
 
                         </ul>
                     </div>
